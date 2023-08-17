@@ -1,5 +1,5 @@
 <script setup>
-import Hexagonal from '@atoms/Hexagonal.vue';
+import Hex from '@molecules/Hex.vue';
 
 defineProps({
 })
@@ -15,7 +15,7 @@ defineProps({
           <img src="https://comunicaciones.segurossura.com.co/MercadeoPersonas/recursos/Web_y-o_landing/co-15082023.svg" alt="Descubrir los secretos del ADN para anticiparnos a LA ENFERMEDAD En nuestro portafolio puedes encontrar soluciones a diferentes patologías de sospecha genética:">
         </div>
         <div class="col-12">
-          <Hexagonal></Hexagonal>
+          <Hex></Hex>
         </div>
       </div>
     </div>

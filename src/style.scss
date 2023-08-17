@@ -70,26 +70,29 @@
   --bs-highlight-bg: #fffbda;
 }
 
-.hexagonal {
-  background-repeat: no-repeat;
-  width: 254px;
-  height: 220px;
-  position: relative;
-  .content {
-    position: absolute;
-    top: 9.448%;
-    left: 50%;
-    height: 78.171%;
-    width: 58.267%;
-    transform: translateX(-50%);
+.scroll-makeup::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
 
-    text-align: center;
-    h6 {
-      font-size: 22px;
-      font-weight: 600;
-      line-height: 26px;
-      letter-spacing: 0em;
-      color: #fff;
-    }
-  }
+.scroll-makeup::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+
+.scroll-makeup::-webkit-scrollbar-button:increment,
+.scroll-makeup::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scroll-makeup::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+.scroll-makeup::-webkit-scrollbar-thumb {
+  background-color: #7979794c;
+  border-radius: 20px;
+  border: 2px solid #96969622;
+}
+
+.scroll-makeup::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
