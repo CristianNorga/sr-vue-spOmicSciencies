@@ -36,7 +36,7 @@ defineProps({
   mask-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 55.47%;
+  width: 100%;
   aspect-ratio: 1.134;
   position: relative;
   .content {

@@ -20,11 +20,14 @@ defineProps({
 
 <template>
   <div class="group-hex position-relative d-flex">
-    <div class="column-hex column-hex-1">
+    <div class="column-hex column-hex-1 d-flex flex-column gap-2">
       <Hexagonal></Hexagonal>
       <Hexagonal></Hexagonal>
     </div>
-    <div class="column-hex column-hex-2"></div>
+    <div class="column-hex column-hex-2 d-flex flex-column gap-2">
+      <Hexagonal></Hexagonal>
+      <Hexagonal></Hexagonal>
+    </div>
   </div>
 </template>
 
@@ -32,6 +35,11 @@ defineProps({
 .group-hex {
   .column-hex {
     width: 50%;
+  }
+  .column-hex-2 {
+    position: relative;
+    padding-top: 23%;
+    left: -10%;;
   }
 }
 </style>
