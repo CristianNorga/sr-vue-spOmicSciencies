@@ -24,6 +24,7 @@ defineProps({
 
 <style scoped>
   #secretsADN {
-    background: #003057;
+    background: rgb(0,48,87);
+    background: linear-gradient(180deg, rgba(0,48,87,1) 83%, rgba(255,255,255,1) 83%);
   }
 </style>
