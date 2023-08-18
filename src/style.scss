@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --bs-blue: #0033A0;
@@ -70,6 +71,181 @@
   --bs-highlight-bg: #fffbda;
 }
 
+/* ==========================================================================
+DEFAULT STYLES INITIAL FORMAT
+========================================================================== */
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  color: #003057;
+}
+
+section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: calc(1.5rem + 1vw);
+}
+
+h2,
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.masked-text,
+.background-text {
+  font-size: calc(3rem + 2vw);
+}
+
+h1.is-style-big {
+  font-size: 3.75rem !important;
+}
+
+h2.is-style-big {
+  font-size: calc(1rem + 2vw) !important;
+}
+
+h3.is-style-big {
+  font-size: calc(1rem + 2vw) !important;
+}
+
+h4.is-style-big {
+  font-size: 1.875rem !important;
+}
+
+h5.is-style-big {
+  font-size: 1.5rem !important;
+}
+
+h6.is-style-big {
+  font-size: 1.25rem !important;
+}
+
+h2.indicative {
+  display: flex;
+  align-items: start;
+
+  &::before {
+    display: inline-block;
+    content: " ";
+    background-image: url("./img/indicative-icon.svg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    height: 32px;
+    width: 18px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+
+
+ul li::before {
+  content: "\2022";
+  color: #58C5C3;
+  ;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -0.5rem;
+}
+
+a {
+  color: #003057;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/* ==========================================================================
+BOOTSTRAP BASED CUSTOM STYLES GLOBALS
+========================================================================== */
+.bg-custom-gray {
+  background-color: #E2E2E2 !important;
+}
+
+.bg-custom-gray-ligth {
+  background-color: #e4e7ea;
+}
+
+.text-custom-green {
+  color: #58C5C3 !important;
+}
+
+.text-custom-gray {
+  color: #606060 !important;
+}
+
+.mw-80 {
+  height: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+
+/* ==========================================================================
+CUSTOM STYLES SITEWEB
+========================================================================== */
+
+.masked-text {
+  position: relative;
+  display: inline-block;
+  color: #003057;
+  text-align: center;
+  // font-size: 5.3125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  width: 100%;
+  z-index: 3;
+}
+
+.background-text {
+  position: absolute;
+  z-index: -1;
+  color: transparent;
+  padding: 3px;
+  line-height: 1;
+  -webkit-text-stroke: 2px #58C5C3;
+  text-align: center;
+  // font-size: 5.3125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  border: 1px;
+}
+
 .scroll-makeup::-webkit-scrollbar {
   -webkit-appearance: none;
 }
@@ -95,4 +271,12 @@
 
 .scroll-makeup::-webkit-scrollbar-track {
   border-radius: 10px;
+}
+
+.underline-custom::before {
+  content: " ";
+  background-color: #58C5C3;
+  width: 100%;
+  height: 2px;
+  border-radius: 100%;
 }

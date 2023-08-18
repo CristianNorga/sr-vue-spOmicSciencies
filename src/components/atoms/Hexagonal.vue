@@ -42,7 +42,7 @@ defineProps({
   .content {
     position: absolute;
     top: 9.448%;
-    left: calc(50% + 7px);
+    left: calc(50% + 0px);
     transform: translateX(-50%);
     flex-wrap: nowrap;
     justify-content: center;
