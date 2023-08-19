@@ -6,6 +6,7 @@ import Tecnologias from '@organisms/Tecnologias.vue';
 import CienciaInnovacion from '@organisms/CienciaInnovacion.vue';
 import ComunicateNostros from '@organisms/ComunicateNostros.vue';
 import Footer from '@organisms/Footer.vue';
+import HumanTalent from '@organisms/HumanTalent.vue';
 
 </script>
 
@@ -13,7 +14,8 @@ import Footer from '@organisms/Footer.vue';
   <Header/>
   <Banner/>
   <Tecnologias/>
-  <SecretsADN></SecretsADN>
+  <SecretsADN/>
+  <HumanTalent/>
   <CienciaInnovacion/>
   <ComunicateNostros/>
   <Footer/>
