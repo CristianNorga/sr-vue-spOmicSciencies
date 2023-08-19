@@ -15,18 +15,17 @@ defineProps({
   
 })
 
-// const count = ref(0)
 </script>
 
 <template>
   <div class="group-hex position-relative d-flex">
     <div class="column-hex column-hex-1 d-flex flex-column gap-2">
-      <Hexagonal></Hexagonal>
-      <Hexagonal></Hexagonal>
+      <Hexagonal :props="allHex[0]"></Hexagonal>
+      <Hexagonal :props="allHex[3]"></Hexagonal>
     </div>
     <div class="column-hex column-hex-2 d-flex flex-column gap-2">
-      <Hexagonal></Hexagonal>
-      <Hexagonal></Hexagonal>
+      <Hexagonal :props="allHex[1]"></Hexagonal>
+      <Hexagonal :props="allHex[2]"></Hexagonal>
     </div>
   </div>
 </template>

@@ -1,28 +1,24 @@
 <script setup>
 
 defineProps({
-  backImg: {
-    type: String,
-    default: "https://comunicaciones.segurossura.com.co/MercadeoPersonas/recursos/Web_y-o_landing/Polygon4co-15082023.png"
+  props: {
+    type: Object,
+    default: {
+      backImg: "https://comunicaciones.segurossura.com.co/MercadeoPersonas/recursos/Web_y-o_landing/Polygon4co-15082023.png",
+      title: "Prueba de Genoma Completo",
+      description: "El análisis del Genoma mediante secuenciación (NGS) está indicado en enfermedades con síntomas graves, pero con un fenotipo poco claro o atípico."
+    }
   },
-  title: {
-    type: String,
-    default: "Prueba de Genoma Completo"
-  },
-  description: {
-    type: String,
-    default: "El análisis del Genoma mediante secuenciación (NGS) está indicado en enfermedades con síntomas graves, pero con un fenotipo poco claro o atípico."
-  }
 })
 
 </script>
 
 <template>
-  <div class="hexagonal" :style="{'background-image': 'url('+backImg+')'}">
+  <div class="hexagonal" :style="{'background-image': 'url('+props.backImg+')'}">
     <div class="content d-flex flex-column scroll-makeup">
-      <h6>{{ title }}</h6>
+      <h6>{{ props.title }}</h6>
       <div class="content-dinamyc">
-        <p>{{description}}</p>
+        <p>{{props.description}}</p>
       </div>
     </div>
   </div>
