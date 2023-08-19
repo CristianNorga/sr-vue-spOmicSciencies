@@ -3,6 +3,17 @@ import { ref } from 'vue';
 
 import Hex from '@molecules/Hex.vue';
 
+defineProps({
+  props: {
+    type: Object,
+    default: {
+      backImg: "https://image.dummyjson.com/420x330",
+      title: "Card title",
+      description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    }
+  }
+})
+
 const isOpen = ref(false)
 
 const toogleButton = () => {
@@ -13,10 +24,10 @@ const toogleButton = () => {
 
 <template>
   <div class="card" :open="isOpen">
-    <img src="https://image.dummyjson.com/180x140" class="card-img-top" alt="...">
+    <img :src="props.backImg" class="card-img-top" alt="...">
     <div class="card-body d-flex flex-column">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">{{ props.title }}</h5>
+      <p class="card-text">{{ props.description }}</p>
       <button @click="toogleButton" class="toogle-content text-center mx-auto">{{isOpen ? 'Ver menos -' : 'Conócelo +'}}</button>
     </div>
   </div>
@@ -62,6 +73,17 @@ const toogleButton = () => {
     &[open=true] {
       .card-text {
         max-height: 320px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      .card-title {
+        min-height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
