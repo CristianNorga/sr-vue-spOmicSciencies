@@ -7,16 +7,18 @@ import CienciaInnovacion from '@organisms/CienciaInnovacion.vue';
 import ComunicateNostros from '@organisms/ComunicateNostros.vue';
 import Footer from '@organisms/Footer.vue';
 import HumanTalent from '@organisms/HumanTalent.vue';
+import WhoWeAre from '@organisms/WhoWeAre.vue';
 
 </script>
 
 <template>
   <Header/>
   <Banner/>
+  <WhoWeAre/>
+  <CienciaInnovacion/>
   <Tecnologias/>
   <SecretsADN/>
   <HumanTalent/>
-  <CienciaInnovacion/>
   <ComunicateNostros/>
   <Footer/>
 </template>
