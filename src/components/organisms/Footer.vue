@@ -4,7 +4,7 @@
 
 <template lang="">
   <footer class="main-footer py-4">
-    <div class="container-lg text-center">
+    <div class="container-sura text-center">
       <div class="row g-0">
         <div class="col-12">
           <div class="privacy-policies d-lg-flex justify-content-lg-start border-top py-4">

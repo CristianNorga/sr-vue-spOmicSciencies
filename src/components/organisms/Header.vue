@@ -4,7 +4,7 @@ import LogoImg from "@img/logo-header.svg"
 <template>
     <header class="main-header">
         <nav class="navbar">
-            <div class="container-lg">
+            <div class="container-sura">
                 <a class="navbar-brand" href="#">
                     <img :src="LogoImg" alt="">
                 </a>
