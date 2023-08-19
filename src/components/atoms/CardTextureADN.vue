@@ -30,7 +30,7 @@ defineProps({
 .card-texture-adn {
   width: 256px;
   min-height: 96px;
-  padding: 14px 20px 14px 30px;
+  padding: 14px 12px 14px 17px;
   background-image: url("https://comunicaciones.segurossura.com.co/MercadeoPersonas/recursos/Web_y-o_landing/textureadn-co-18082023205asd.png");
   background-repeat: no-repeat;
   background-size: cover;
