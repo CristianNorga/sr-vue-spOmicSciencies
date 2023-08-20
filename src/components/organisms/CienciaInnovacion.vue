@@ -1,11 +1,7 @@
 <script setup>
-import Destino from "@img/CienciaEInnovacion/destino.svg";
-import Genome from "@img/CienciaEInnovacion/genome.svg";
-import Genetics from "@img/CienciaEInnovacion/genetics.svg";
-import TestTube from "@img/CienciaEInnovacion/test-tube.svg";
-import Atom from "@img/CienciaEInnovacion/atom.svg";
-import Dropper from "@img/CienciaEInnovacion/dropper.svg";
+import { inject } from 'vue'
 
+const assets = inject('assets')
 </script>
 
 <template>
@@ -40,7 +36,7 @@ import Dropper from "@img/CienciaEInnovacion/dropper.svg";
             <div class="row justify-content-center text-center">
                 <div class="col-6 col-md-4">
                     <div class="pb-4">
-                        <img :src="Genome" alt="">
+                        <img :src="`${assets}/genome.svg`" alt="">
                     </div>
                     <p><span class="text-custom-green fw-bold"> Secuenciación de próxima generación (NGS): </span>
                         informe
@@ -48,7 +44,7 @@ import Dropper from "@img/CienciaEInnovacion/dropper.svg";
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="pb-4">
-                        <img :src="Dropper" alt="">
+                        <img :src="`${assets}/dropper.svg`" alt="">
                     </div>
                     <p><span class="text-custom-green fw-bold fw-bold"> Secuenciación Sanger:o </span> mutaciones
                         puntuales, expansión
@@ -56,7 +52,7 @@ import Dropper from "@img/CienciaEInnovacion/dropper.svg";
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="pb-4">
-                        <img :src="Genetics" alt="">
+                        <img :src="`${assets}/genetics.svg`" alt="">
                     </div>
                     <p><span class="text-custom-green fw-bold"> MLPA: </span> duplicaciones o deleciones en genes de
                         interés.
@@ -64,13 +60,13 @@ import Dropper from "@img/CienciaEInnovacion/dropper.svg";
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="pb-4">
-                        <img :src="TestTube" alt="">
+                        <img :src="`${assets}/test-tube.svg`" alt="">
                     </div>
                     <p><span class="text-custom-green fw-bold">MicroARRAYS </span> </p>
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="pb-4">
-                        <img :src="Atom" alt="">
+                        <img :src="`${assets}/atom.svg`" alt="">
                     </div>
                     <p><span class="text-custom-green fw-bold"> PRS (Polygenic Risk Score): </span> estimación de Riesgo
                         Poligénico.</p>

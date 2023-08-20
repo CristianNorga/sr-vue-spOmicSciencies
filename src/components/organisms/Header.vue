@@ -1,12 +1,14 @@
 <script setup>
-import LogoImg from "@img/logo-header.svg"
+import { inject } from 'vue'
+
+const assets = inject('assets')
 </script>
 <template>
     <header class="main-header">
         <nav class="navbar">
             <div class="container-sura">
                 <a class="navbar-brand" href="#">
-                    <img :src="LogoImg" alt="">
+                    <img :src="`${assets}/logo-header.svg`" alt="">
                 </a>
             </div>
         </nav>

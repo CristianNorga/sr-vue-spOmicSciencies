@@ -1,5 +1,7 @@
 <script setup>
-import UltimaGeneracion from "@img/tecnologia-ultima-generacion.png"
+import { inject } from 'vue'
+
+const assets = inject('assets')
 </script>
 <template>
     <section class="position-relative pb-0 pb-lg-5">
@@ -49,7 +51,7 @@ import UltimaGeneracion from "@img/tecnologia-ultima-generacion.png"
             </div>
         </div>
         <div class="container-img text-center">
-            <img class="right-img" :src="UltimaGeneracion" alt="">
+            <img class="right-img" :src="`${assets}/tecnologia-ultima-generacion.png`" alt="">
         </div>
     </section>
 </template>

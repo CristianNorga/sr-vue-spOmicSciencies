@@ -11,7 +11,6 @@ export default defineConfig({
 				{ find: '@atoms', replacement: './src/components/atoms' },
 				{ find: '@molecules', replacement: './src/components/molecules' },
 				{ find: '@organisms', replacement: './src/components/organisms' },
-				{ find: '@img', replacement: './src/img' },
 			],
 		}),
 	],

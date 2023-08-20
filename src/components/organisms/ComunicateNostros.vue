@@ -1,7 +1,7 @@
 <script setup>
-import Mail from "@img/mail.svg";
-import Phone from "@img/phone.svg";
-import Mobile from "@img/mobile.svg";
+import { inject } from 'vue'
+
+const assets = inject('assets')
 </script>
 
 <template>
@@ -12,17 +12,17 @@ import Mobile from "@img/mobile.svg";
                     <h2 class="indicative mb-4">Comunícate con nosotros</h2>
                     <div class="row justify-content-center text-center mb-3">
                         <div class="col-6 col-md-4">
-                            <img class="pb-4" :src="Phone" alt="">
+                            <img class="pb-4" :src="`${assets}/phone.svg`" alt="">
                             <p class="m-0">+57 604 369 5100</p>
                             <p>extensión 46582</p>
                         </div>     
                         <div class="col-6 col-md-4">
-                            <img class="pb-4" :src="Mobile" alt="">
+                            <img class="pb-4" :src="`${assets}/mobile.svg`" alt="">
                             <p>316 461 9965</p>
                         </div>     
                         <div class="col-6 col-md-4">
                             <!-- <div class="w-100 text-center"> -->
-                                <img class="pb-4" :src="Mail" alt="">
+                                <img class="pb-4" :src="`${assets}/mail.svg`" alt="">
                             <!-- </div> -->
                             <a href="mailto:elcorreoquequieres@correo.com" class="text-custom-wrap">ceunidaddegenetica@suramericana.com.co</a>
                         </div>
