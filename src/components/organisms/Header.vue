@@ -20,7 +20,7 @@ const assets = inject('assets')
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
 }
 
 img {
