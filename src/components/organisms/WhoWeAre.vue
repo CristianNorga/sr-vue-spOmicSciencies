@@ -44,6 +44,11 @@ const items = [
             <CardTextureADN :title="item.title" :description="item.description" />
           </div>
         </div>
+        <div class="col-12 pt-4 video">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/63W-dlsLxSY?si=jW2hDanRLzQzqDCv" title="Centro de Ciencias Ómicas SURA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -55,6 +60,16 @@ const items = [
 }
 .swiper-slide {
   width: 80%;
+}
+
+#humanTalent .video{
+  max-width: 824px;
+  width: 100%;
+}
+
+#humanTalent .video .ratio{
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (min-width: 768) {

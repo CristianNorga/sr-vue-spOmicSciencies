@@ -9,7 +9,10 @@ defineProps({
     default: {
       backImg: "https://image.dummyjson.com/420x330",
       title: "Card title",
-      description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+      default: [
+        "Some quick example text to build on the card title and make up.",
+        "the bulk of the card's content."
+      ]
     }
   }
 })
@@ -27,7 +30,11 @@ const toogleButton = () => {
     <img :src="props.backImg" class="card-img-top" alt="...">
     <div class="card-body d-flex flex-column">
       <h5 class="card-title">{{ props.title }}</h5>
-      <p class="card-text">{{ props.description }}</p>
+      <p class="card-text content">
+        <ul>
+          <li v-for="point in props.description">{{point}}</li>
+        </ul>
+      </p>
       <button @click="toogleButton" class="toogle-content text-center mx-auto">{{isOpen ? 'Ver menos -' : 'Conócelo +'}}</button>
     </div>
   </div>
@@ -57,12 +64,24 @@ const toogleButton = () => {
       margin: 0;
       overflow: hidden;
 
+      font-family: Barlow Condensed;
       font-size: 16px;
       font-weight: 400;
       line-height: 19px;
       text-align: left;
+      letter-spacing: 0em;
 
       color: #606060;
+
+      li::before {
+        content: "•";
+        font-size: 20px;
+        color: #606060;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 0 rem;
+        margin-right: 5px;
+      }
     }
     .toogle-content {
       color: #003057;
